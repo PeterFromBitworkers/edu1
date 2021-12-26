@@ -1,7 +1,7 @@
 let rot13 = (message) => {
     
-    const input = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-    const output = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm';
+    const input = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ';
+    const output = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm ';
     let encoded = '';
     
     for (let i=0; i < message.length; i++) {
@@ -12,6 +12,11 @@ let rot13 = (message) => {
     return encoded;
 }
 
-let input = "hello"
-let output = rot13(input)
+
+const prompt = require("prompt-sync")();
+
+const message = prompt("What is the message");
+
+let output = rot13(message)
+
 console.log(output)
