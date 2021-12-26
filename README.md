@@ -11,5 +11,10 @@ eductational test environment
 * install code .
 * setup rsa keys
 * use vsc timeline to compare commits
+* markdown principles
+* github principles
+* cheatseet for markdown and git
+
+
 
 
